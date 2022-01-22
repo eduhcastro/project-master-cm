@@ -1,0 +1,597 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Teko:300,400,500");
+
+/* HTML5 */
+article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, mark, canvas, video, audio, details, summary {display: block;}
+
+
+
+h1, h2, h3, h4, h5, h6 {font-weight: 400; font-family: 'Teko'; text-transform: uppercase;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after, q:before, q:after {content: ''; content: none;}
+
+table {border-collapse: collapse; border-spacing: 0; table-layout: fixed;}
+table caption {display: none;}
+
+
+strong {font-weight: 400;}
+.TrThRed{
+	background: #f10 url(/template/images/comum/bbs_tit_bg.jpg) !important;
+	background-blend-mode: darken !important;
+    border-right: 1px solid #a41100 !important;
+	}
+/* FORM */
+input, select, textarea, button {font-size: 100%; vertical-align: middle; font-family: 'Roboto';}
+input:focus, select:focus, textarea:focus, button:focus {outline: none;}
+input[type="file"]::-webkit-file-upload-button {height: 100%; vertical-align: middle;}
+
+input[type="checkbox"] {width: 18px; height: 18px; margin-right: 4px; padding: 0; border: none;}
+input[type="radio"] {width: 18px; height: 18px; padding: 0; border: none;}
+
+button {font-family: 'Teko'; text-transform: uppercase; border: none;}
+button:hover {cursor: pointer; transition: 0.4s ease-in-out;}
+
+/* HEADER */
+header {width: 100%; height: 72px; background: #000; position: relative;}
+header > a {height: 72px; margin-left: 24px; font-size: 22px; letter-spacing: 0.4px; color: #aaa; vertical-align: top;}
+header > a > p {height: 18px; margin-top: 28px; padding-left: 24px; border-left: 1px solid #666;}
+header > a > img {padding-top: 5px;}
+header > ul {position: absolute; top: 0; right: 0;}
+header > ul > li {height: 72px; font-size: 14px; color: #fff; letter-spacing: -0.2px; display: inline-block;}
+header > ul > li.cash {position: relative;}
+header > ul > li.cash p {height: 16px; margin-top: 28px; padding: 2px 10px 0 12px; display: inline-block;}
+header > ul > li.cash p.bonus {border-left: 1px solid #777;}
+header > ul > li.cash strong {color: #fe0;}
+header > ul > li.cash a {width: 14px; height: 12px; margin-right: 16px; font-size: 0; text-indent: -9999px; background: url(/template/images/member/btn_refresh.png) no-repeat left top; vertical-align: middle;}
+header > ul > li.cash a:hover {background-position: left -12px; transition: none;}
+header > ul > li.my {width: 168px; padding: 30px 20px 0 42px; color: #aaa; background: #111 url(/template/images/member/icon_12_user.png) no-repeat 20px 50%; overflow: hidden; text-overflow: ellipsis; word-wrap: normal; white-space: nowrap;}
+header > ul > li.play {width: 204px; font-weight: 500; text-align: center; background: #fc0 url(/template/images/member/btn_gnb_gamestart.png) repeat;}
+header > ul > li.play a > span {color: #c00;}
+header > ul > li.play a {height: 72px; padding: 16px 24px 0; font-size: 21px; color: #000; line-height: 20px; letter-spacing: 3px; border:1px solid #fd0;}
+header > ul > li.play a:hover {border:1px solid #fe0; background: #fe0;}
+header > ul > li.logout a {width: 96px; height: 72px; padding: 29px 0 0 2px; font-size: 17px; color: #fff; line-height: 20px; letter-spacing: 1px; text-align: center; background: #b00;}
+header > ul > li.logout a:hover {color: #fe0; background: #d00;}
+
+/* TOP EVENT */
+.top_event {width: 100%; height: 192px; font-size: 0; text-indent: -9999px; background: #111 url(/template/images/member/top_event.jpg) no-repeat center top; overflow: hidden;}
+
+/* LAYOUT */
+.sub_purchase { max-width: 1200px; margin: 0 auto; padding: 0 36px;}
+.sub_purchase .tab {width: 100%; max-width: 900px;height: 100px; margin: 36px auto 40px;}
+.sub_purchase .tab li {width: 33.5%; text-align: center; display: inline-block;}
+.sub_purchase .tab li:first-child {width: 33%;}
+.sub_purchase .tab li > a {width: 100%; height: 100px; padding-top: 62px; font-size: 22px; color: #000; letter-spacing: 0.4px;}
+.sub_purchase .tab li.topup > a {background: url(/template/images/member/icon_tab_topup.png) no-repeat center -216px;}
+.sub_purchase .tab li.coupon > a {background: url(/template/images/member/icon_tab_coupon.png) no-repeat center -216px;}
+.sub_purchase .tab li.history > a {background: url(/template/images/member/icon_tab_history.png) no-repeat center -216px;}
+.sub_purchase .tab li > a:hover {background-position: center -96px; transition: none;}
+.sub_purchase .tab li.current > a {background-position: center 24px;}
+.sub_purchase .tab li.current > a:hover {background-position: center 24px;}
+
+.nodata {width: 100%; height: 264px; margin-top: 60px; padding-top: 174px; font-size: 14px; color: #000; text-align: center; background: #f5f5f5 url(/template/images/member/icon_72_data.png) no-repeat 50% 82px;}
+.nosearch {width: 100%; height: 264px; margin-top: 60px; padding-top: 174px; font-size: 14px; color: #000; text-align: center; background: #f5f5f5 url(/template/images/member/icon_72_blank.png) no-repeat 50% 82px;}
+.nosearch > span {color: #c00;}
+
+.loding {width: 100%; height: 100%; text-align: center; background: url(/template/images/member/dim_bk60.png) repeat; position: fixed; left: 0; top: 0; display: none; z-index: 90;}
+.loding > p {width: 62px; height: 62px; margin: -31px 0 0 -31px; background: url(/template/images/member/loading_bg.png) no-repeat; position: relative; top: 50%; left: 50%;}
+.loding > p > img {width: 60px; height: 60px; margin-top: 1px;}
+
+/* TOPUP */
+.sub_purchase .pg_list {margin: -20px 0 0 -15px; }
+.sub_purchase .pg_list li {width: 20%; margin-top: 20px; padding-left: 15px; font-size: 0; letter-spacing: -4px; text-align: center; display: inline-block;}
+
+
+.sub_purchase .pg_list li > a {width: 100%; padding: 18px 0 12px; font-size: 18px; color: #aaa; letter-spacing: 0.8px; font-style: italic; border: 1px solid #fff; border-radius: 4px; background: #fff;}
+.sub_purchase .pg_list li > a > img {width: 65%; max-width: 156px;}
+.sub_purchase .pg_list li > a:hover {border: 1px solid #000;}
+.sub_purchase .pg_list li.current {color: #c00;}
+.sub_purchase .pg_list li.current > a {border: 1px solid #c00; background: #fff;}
+.sub_purchase .pg_list li.current > a:hover {border: 1px solid #c00; background: #fff;}
+.sub_purchase .pg_list li.none p {padding-top: 60%; border: 1px solid #ddd; background: #eee;}
+
+.sub_purchase .pg_info {width: 100%; margin: 48px 0 30px; text-align: center; background: url(/template/images/member/line_bk.png) repeat-x left 50%;}
+.sub_purchase .pg_info > p {padding: 0 18px 0 20px; font-size: 14px; font-weight: 500; background: #f5f5f5 url(/template/images/member/bg_pattern.png) repeat; display: inline-block;}
+
+.sub_purchase .pg_explain {width: 100%; margin-bottom: 72px; padding: 22px 24px 18px; background: #f5f5f5 url(/template/images/member/bg_pattern_dk.png) repeat;}
+.sub_purchase .pg_explain > p {padding-left: 36px; font-size: 14px; color: #000; line-height: 24px; background: url(/template/images/member/icon_24_warning.png) no-repeat left top;}
+
+.sub_purchase .purchase {width: 100%; font-size: 0; letter-spacing: -4px;}
+.sub_purchase .purchase > div {width: 50%; display: inline-block; vertical-align: top;}
+.sub_purchase .purchase .price {padding-right: 12px; position: relative;}
+.sub_purchase .purchase .price > h3 {font-size: 17px; color: #c00; letter-spacing: 0.4px; position: absolute; top: -30px;}
+.sub_purchase .purchase .price li {height: 48px; margin-top: 2px; padding: 16px 24px 0; font-size: 15px; color: #000; background: #fff; position: relative;}
+/* .sub_purchase .purchase .price li:first-child {margin-top: 0;} */
+.sub_purchase .purchase .price li > strong {width: 102px; margin-right: 12px; color: #666; letter-spacing: 0.2px; border-right: 1px solid #aaa; display: inline-block;}
+.sub_purchase .purchase .price li > span {color: #c00;}
+.sub_purchase .purchase .price li > input {margin-right: 8px;}
+.sub_purchase .purchase .price li .bonus {font-size: 11px; color: #888; line-height: 13px; letter-spacing: 0.4px; text-transform: uppercase; position: absolute; top: 24px; left: 396px;}
+.sub_purchase .purchase .price_explain {margin-top: 2px; padding: 15px 24px 13px 54px; font-size: 14px; letter-spacing: 0.1px; color: #d00; line-height: 20px; background: #fff url(/template/images/member/icon_24_warning.png) no-repeat 24px 15px; background-size: 18px;}
+
+.sub_purchase .purchase .form {padding-left: 12px; text-align: left; position: relative;}
+.sub_purchase .purchase .form > h3 {font-size: 17px; color: #c00; letter-spacing: 0.4px; position: absolute; top: -30px;}
+
+.sub_purchase .purchase .form .merchant {margin-bottom: 2px; padding: 36px 36px 35px; background: #fff;}
+.sub_purchase .purchase .form .merchant ul {border-top: 1px solid #eee; border-left: 1px solid #eee;}
+.sub_purchase .purchase .form .merchant li {width: 33.5%; height: 126px; padding-top: 24px; text-align: center; border-right: 1px solid #eee; border-bottom: 1px solid #eee; display: inline-block; position: relative;}
+.sub_purchase .purchase .form .merchant li > img {width: 50%;}
+.sub_purchase .purchase .form .merchant li:nth-child(3n) {width: 33%;}
+.sub_purchase .purchase .form .merchant li > p {width: 100%; height: 34px; padding-top: 6px; background: #f9f9f9; position: absolute; bottom: 0;}
+.sub_purchase .purchase .form .merchant li > p > input {margin: 3px auto 0;}
+
+.sub_purchase .purchase .form .payment {margin-bottom: 2px; padding: 36px 36px 12px; background: #fff;}
+.sub_purchase .purchase .form .payment li {width: 33.5%; height: 49px; padding-top: 6px; font-size: 15px; color: #666; letter-spacing: 0; display: inline-block;}
+.sub_purchase .purchase .form .payment li:nth-child(3n) {width: 33%;}
+.sub_purchase .purchase .form .payment li > input {margin: -2px 8px 0 0; }
+
+.sub_purchase .purchase .form .method {margin-bottom: 2px; padding: 36px; background: #fff;}
+.sub_purchase .purchase .form .method ul {border-bottom: 1px solid #eee;}
+.sub_purchase .purchase .form .method li {width: 100%; font-size: 0; color: #666; letter-spacing: -4px; border: 1px solid #eee; border-bottom: none;}
+.sub_purchase .purchase .form .method li > div {padding: 17px 24px 17px 0; font-size: 14px; color: #666; letter-spacing: 0.2px; line-height: 18px; vertical-align: middle; display: table-cell;}
+.sub_purchase .purchase .form .method li > div:first-child {width: 132px; padding-left: 24px; letter-spacing: 0; background: #f9f9f9;}
+.sub_purchase .purchase .form .method li > div > p {padding: 6px 0 5px 24px; display: inline-block;}
+.sub_purchase .purchase .form .method li input {margin: -2px 8px 0 0;}
+
+.sub_purchase .purchase .form .entry {margin-bottom: 2px; padding: 24px 36px 36px; background: #fff;}
+.sub_purchase .purchase .form .entry .input {width: 100%; height: 50px; margin-top: 12px; display: inline-block; position: relative;}
+.sub_purchase .purchase .form .entry .input_left {padding-right: 6px;}
+.sub_purchase .purchase .form .entry .input_right {padding-left: 6px;}
+.sub_purchase .purchase .form .entry .input > label {font-size: 14px; color: #999; letter-spacing: 0; position: absolute; left: 20px; top: 19px; z-index: 1;}
+.sub_purchase .purchase .form .entry .input_last > label {left: 26px;}
+.sub_purchase .purchase .form .entry .input > input {width: 100%; height: 50px; padding: 0 20px; font-size: 14px; color: #666; line-height: 48px; letter-spacing: 0; border: 1px solid #ddd; background: none; position: relative; z-index: 2; vertical-align: top;}
+.sub_purchase .purchase .form .entry .input > input:focus {color: #000; border: 1px solid #000;}
+
+.sub_purchase .purchase .form .entry .input_with {width: 100%; height: 50px; margin-top: 12px; display: inline-block; position: relative;}	
+.sub_purchase .purchase .form .entry .input_with > input {padding: 0 120px 0 24px;}	
+.sub_purchase .purchase .form .entry .input_btn {width: 96px; height: 52px; padding-top: 4px; font-size: 15px; color: #666; font-weight: 500; border: 1px solid #ccc; background: #ddd; text-align: center; position: absolute; right: 0; top: 0; z-index: 2;}	
+.sub_purchase .purchase .form .entry .input_btn:hover {color: #000; border: 1px solid #aaa; background: #ccc;}
+
+.sub_purchase .purchase .form .entry .wrong > input {color: #c00; border: 1px solid #c00;}
+.sub_purchase .purchase .form .entry .warning {height: 16px; margin-top: 20px; padding: 2px 0 0 24px; font-size: 14px; letter-spacing: 0; color: #c00; background: #fff url(/template/images/member/icon_16_warn.png) no-repeat left 50%;}
+.sub_purchase .purchase .form .entry_half .input {width: 50%;}
+
+.sub_purchase .purchase .form .entry_btn {padding: 46px 36px 136px; position: relative;}
+
+.sub_purchase .purchase .form .entry_voucher {margin-bottom: 2px; padding: 24px 24px 26px; background: #fff;}
+.sub_purchase .purchase .form .entry_voucher .input {width: 100%; height: 50px; display: inline-block; position: relative;}
+.sub_purchase .purchase .form .entry_voucher .input > input {width: 100%; height: 52px; padding: 0 24px; font-size: 14px; color: #666; line-height: 53px; letter-spacing: 0; border: 1px solid #ddd; background: none; position: relative; z-index: 2; vertical-align: top;}
+.sub_purchase .purchase .form .entry_voucher .input > input:focus {color: #000; border: 1px solid #000;}
+.sub_purchase .purchase .form .entry_voucher .input > label {font-size: 14px; color: #999; letter-spacing: 0; position: absolute; left: 25px; top: 20px; z-index: 1;}
+.sub_purchase .purchase .form .entry_voucher .wrong > input {color: #c00; border: 1px solid #c00;}
+.sub_purchase .purchase .form .entry_voucher .warning {height: 16px; margin: 30px 0 -8px; padding: 2px 0 0 24px; font-size: 14px; letter-spacing: 0; color: #c00; background: #fff url(/template/images/member/icon_16_warn.png) no-repeat left 50%;}
+
+.sub_purchase .purchase .form .entry_email {padding: 28px 24px 108px; font-size: 14px; color: #666; letter-spacing: 0; line-height: 22px; background: #fff; position: relative;}
+.sub_purchase .purchase .form .entry_email strong {color: #c00;}
+.sub_purchase .purchase .form .entry_email input {width: 100%; height: 52px; margin-top: 16px; padding: 0 24px; font-size: 14px; color: #000; line-height: 53px; border: 1px solid #ddd;}
+.sub_purchase .purchase .form .entry_email input:focus {color: #000; border: 1px solid #000;}
+.sub_purchase .purchase .form .entry_email input::-ms-input-placeholder {color: #999;}
+.sub_purchase .purchase .form .entry_email input::-webkit-input-placeholder {color: #999;} 
+.sub_purchase .purchase .form .entry_email input::-moz-placeholder {color: #999;}
+
+.sub_purchase .purchase .form .entry_txt {padding: 38px 24px 112px; font-size: 14px; color: #666; letter-spacing: 0; line-height: 24px; background: #fff; position: relative;}
+.sub_purchase .purchase .form .entry_txt strong {color: #c00;}
+
+.sub_purchase .purchase .form .email_only {padding: 68px 48px 148px; line-height: 26px;}
+.sub_purchase .purchase .form .email_only input {height: 72px; margin-top: 28px;}
+
+.sub_purchase .purchase .form .entry_btns {width: 100%; margin-top: 12px; padding: 24px 12px 26px; font-size: 0; letter-spacgin: -4px; border: 1px solid #ddd; border-radius: 4px; background: #f9f9f9;}
+.sub_purchase .purchase .form .entry_btns > p {width: 50%; padding: 0 12px; display: inline-block;}
+.sub_purchase .purchase .form .entry_btns > p > button {width: 100%; padding: 26px 12px 20px; font-size: 18px; color: #666; letter-spacing: 0; line-height: 12px; border: 1px solid #aaa; border-radius: 4px; background: #fff;}
+.sub_purchase .purchase .form .entry_btns > p > button:hover {color: #000; border: 1px solid #000;}
+.sub_purchase .purchase .form .entry_btns .btns_rd {color: #c00; border: 1px solid #c00;}
+
+.sub_purchase .purchase .form .result_info {width: 100%; padding: 17px 24px; background: #fff;}
+.sub_purchase .purchase .form .result_info li {font-size: 0; letter-spacing: -4px; border-bottom: 1px solid #ddd;}
+.sub_purchase .purchase .form .result_info li > p {height: 46px; font-size: 14px; line-height: 47px; letter-spacing: 0; display: inline-block;}
+.sub_purchase .purchase .form .result_info li > p > strong {color: #c00;}
+.sub_purchase .purchase .form .result_info .last {border-bottom: none;}
+.sub_purchase .purchase .form .result_info .stit {width: 45%; padding-left: 12px; color: #c00;}
+.sub_purchase .purchase .form .result_info .txt {width: 55%; padding-right: 12px; text-align: right;}
+
+.sub_purchase .purchase .form .btn {width: 100%; position: absolute; left: 0; bottom: 0; background: #b00 url(/template/images/member/bg_texture_b10.png) repeat-y right bottom;}
+.sub_purchase .purchase .form .btn > a {width: 100%; height: 74px; padding-top: 28px; font-size: 20px; color: #fff; letter-spacing: 1px; text-align: center;}
+.sub_purchase .purchase .form .btn > a:hover {background: #d00;}
+
+.sub_purchase .purchase .form .bot_btn {width: 100%; background: #b00 url(/template/images/member/bg_texture_b10.png) repeat-y right bottom;}
+.sub_purchase .purchase .form .bot_btn > a {width: 100%; height: 74px; padding-top: 28px; font-size: 20px; color: #fff; letter-spacing: 1px; text-align: center;}
+.sub_purchase .purchase .form .bot_btn > a:hover {background: #d00;}
+
+/* COUPON */
+.sub_purchase .coupon_entry {background: #fff url(/template/images/member/coupon_bg.jpg) no-repeat center top;}
+.sub_purchase .coupon_entry > div {width: 100%; height: 360px; padding-top: 88px; text-align: center; background: url(/template/images/member/coupon_hide_left.png) no-repeat left top, url(/template/images/member/coupon_hide_right.png) no-repeat right top;}
+.sub_purchase .coupon_entry > div > h2 {font-size: 38px; color: #7fc; letter-spacing: 1.2px;}
+.sub_purchase .coupon_entry .txt {margin-top: 2px; font-size: 19px; color: #fff; font-weight: 300;}
+.sub_purchase .coupon_entry .input {width: 600px; margin: 48px auto 60px; text-align: left; background: #f5f5f5; position: relative;}
+.sub_purchase .coupon_entry .input > input {width: 600px; height: 84px; padding: 0 156px 0 36px; font-size: 19px; color: #000; line-height: 84px; border: none; background: none; position: relative; z-index: 2;}
+.sub_purchase .coupon_entry .input > input:focus {color: #000;}
+.sub_purchase .coupon_entry .input > label {font-size: 22px; color: #999; letter-spacing: 0.6px; text-transform: uppercase; font-family: "Teko"; position: absolute; left: 36px; top: 34px; z-index: 1;}
+.sub_purchase .coupon_entry .input > button {width: 120px; height: 84px; padding:0; font-size: 22px; color: #000; letter-spacing: 0.4px; background: #ddd url(/template/images/member/bg_texture_b5.png) repeat-y center top; position: absolute; right: 0; top: 0; z-index: 3;}
+.sub_purchase .coupon_entry .input > button:hover {background: #fc0;}
+
+.sub_purchase .coupon_explain {width: 100%; margin-top: 60px;}
+.sub_purchase .coupon_explain li.tit > h4 {font-size: 22px; color: #c00; padding: 0 18px 0 20px; background: #f5f5f5 url(/template/images/member/bg_pattern.png) repeat; display: inline-block;}
+
+/* BBS */
+.sub_purchase .bbs {padding: 36px 36px 48px; background: #fff;}
+
+.bbs .bbs_top {margin-bottom: 36px; font-size: 0; letter-spacing: -4px; position: relative;}
+.bbs .bbs_top select {width: 144px; height: 36px; padding: 8px 12px; font-size: 12px; color: #999; letter-spacing: 0; border: 1px solid #ccc;}
+
+.bbs .bbs_top .search {position: absolute; right: 0; top: 0;}
+.bbs .bbs_top .search .input {vertical-align: middle; display: inline-block; position: relative;}
+.bbs .bbs_top .search .input > label {font-size: 12px; color: #999; letter-spacing: 0.4px; position: absolute; left: 12px; top: 12px; z-index: 1;}
+.bbs .bbs_top .search .input > input {width: 92px; height: 36px; padding: 0 12px; font-size: 12px; color: #999; letter-spacing: 0; border: 1px solid #ccc; border-right: none; background: none; position: relative; z-index: 2;}
+.bbs .bbs_top .search .input > input.entry {color: #000;}
+.bbs .bbs_top .search .input > input.basic {color: #000;}
+.bbs .bbs_top .search > select {width: 120px; border-right: none;}
+.bbs .bbs_top .search > button {width: 92px; height: 36px; padding-top: 2px; font-size: 16px; color: #fff; letter-spacing: 0.4px; background: #aaa url(/template/images/member/bg_texture_b5.png) no-repeat 50% 50%;}
+.bbs .bbs_top .search > button:hover {background: #999;}
+
+.bbs .state {    word-break: keep-all; width: 84px; height: 32px; margin: 0 auto; padding-top: 10px; font-size: 11px; letter-spacing: 0.2px; text-align: center; border: 1px solid #000; border-radius: 2px; background: #fff;}
+.bbs .state_basic {color: #c00; border-color: #c00;}
+.bbs .state_used {color: #950; border-color: #a61;}
+.bbs .state_cancel {color: #888; border-color: #aaa;}
+
+.bbs .bbs_list {width: 100%; text-align: center;}
+.bbs .bbs_list tr.bg, .bbs .bbs_list tr:nth-child(2n+1) {background: #f5f5f5;}
+.bbs .bbs_list tr:first-child {background:#fff;}
+.bbs .bbs_list th {height: 42px; padding-top: 5px; font-size: 18px; color: #c00; letter-spacing: 0.8px; font-weight: 400; font-family: 'Teko'; text-transform: uppercase; border-top: 2px solid #c00; border-bottom: 2px solid #c00; vertical-align: middle;}
+.bbs .bbs_list th:first-child {width: 10%; color: #000; border-top: 2px solid #000; border-bottom: 2px solid #000;}
+.bbs .bbs_list td {word-break: break-word; height: 68px; padding: 0 18px; font-size: 15px; vertical-align: middle;}
+.bbs .bbs_list td:first-child {color: #c00;}
+.bbs .bbs_list td.date {font-size: 14px; font-weight: 300; letter-spacing: -0.2px; text-transform: uppercase;}
+.bbs .bbs_list td.tit {width: 100%; text-align: left; padding-left: 36px; overflow: hidden; text-overflow: ellipsis; word-wrap: normal; white-space: nowrap;}
+.bbs .bbs_list.topup td.tit {text-align: center;}
+
+.bbs .bbs_list td .mobile_tit, .bbs .bbs_list .mobile  {display: none;}	
+.bbs .bbs_list td p.mobile {display: none;}	
+.bbs .bbs_list td:nth-child(3) p.mobile {font-size: 14px; font-weight: 300; letter-spacing: -0.2px; text-transform: uppercase;}		
+.bbs .bbs_list th.date {width: 15%;}	
+.bbs .bbs_list th.tit {width: 20%;}	
+.bbs .bbs_list th.nominal {width: 20%;}	
+.bbs .bbs_list th.saldo {width: 20%;}	
+.bbs .bbs_list th.status_btn {width: 15%;}
+
+
+/* TOPUP */
+.bbs .bbs_list.topup th.date {width: 15%;}
+.bbs .bbs_list.topup th.tit {width: 20%;}
+.bbs .bbs_list.topup th.nominal {width: 20%;}
+.bbs .bbs_list.topup th.balance {width: 20%;}
+.bbs .bbs_list.topup th.state_btn {width: 15%;}
+/* CASH */
+.bbs .bbs_list.cash th.date {width: 15%;}
+.bbs .bbs_list.cash th.game {width: 10%;}
+.bbs .bbs_list.cash th.tit {width: 30%;}
+.bbs .bbs_list.cash th.nominal {width: 15%;}
+.bbs .bbs_list.cash th.state_btn {width: 20%;}
+/* COUPON */
+.bbs .bbs_list.coupon th.date {width: 15%;}
+.bbs .bbs_list.coupon th.tit {width: 40%;}
+.bbs .bbs_list.coupon th.code {width: 15%;}
+.bbs .bbs_list.coupon th.state_btn {width: 20%;} 
+
+.bbs .paging {margin-top: 48px; font-size: 0; letter-spacing: -4px; text-align: center;}
+.bbs .paging a {min-width: 48px; height: 24px; padding: 0 12px; text-indent: -9999px;}
+.bbs .paging a.first {background: url(/template/images/member/btn_paging_first.png) no-repeat 50% top;}
+.bbs .paging a.prev {background: url(/template/images/member/btn_paging_prev.png) no-repeat 50% top;}
+.bbs .paging a.next {background: url(/template/images/member/btn_paging_next.png) no-repeat 50% top;}
+.bbs .paging a.last {background: url(/template/images/member/btn_paging_last.png) no-repeat 50% top;}
+.bbs .paging a:hover {background-color: #f5f5f5; background-position: 50% -24px;}
+.bbs .paging ul {margin: 0 6px;}
+.bbs .paging ul li.current {min-width: 48px; height: 24px; padding: 5px 12px 0; font-size: 18px; color: #c00; letter-spacing: 0.6px; font-weight: 300; text-decoration: underline; font-family: 'Teko';}
+.bbs .paging ul li a {height: 24px; padding-top: 5px; font-size: 18px; color: #888; letter-spacing: 0.6px; font-weight: 300; text-indent: 0;}
+.bbs .paging ul li a:hover {color: #000; background: #f5f5f5;}
+.bbs .paging a, .bbs .paging ul, .bbs .paging li {vertical-align: top; display: inline-block; *zoom: 1; *display: inline;}
+
+/* LAYER POPUP */
+.dimmed {width: 100%; height: 100%; background: url(/template/images/member/dim_bk60.png) repeat; position: fixed; left: 0; top: 0; z-index: 90;}
+
+.popup {width: 100%; height: 100%; position: fixed; left: 0; top: 0; z-index: 98;}
+.popup .popup_layout {width: 504px; margin: -180px 0 0 -252px; padding: 48px; text-align: center; background: #fff; box-shadow: 0px 12px 60px rgba(0, 0, 0, 0.3); position: absolute; top: 50%; left: 50%; z-index: 99;}
+.popup .popup_layout_cvs {margin-top: -286px;}
+
+.popup .popup_layout > h3 {margin-bottom: 24px; color: #c00; letter-spacing: 0.4px; text-align: left;}
+.popup .popup_layout > p {font-size: 16px; line-height: 24px;}
+.popup .popup_layout > p > strong {margin-bottom: 12px; font-size: 22px; color: #c00; letter-spacing: 0; font-weight: 300; display: block;}
+.popup .popup_layout > p.completed {padding-top: 74px; background: url(/template/images/member/icon_48_complete.png) no-repeat center top;}
+.popup .popup_layout > p.warning {padding-top: 74px; font-size: 14px; background: url(/template/images/member/icon_48_warning.png) no-repeat center top;}
+.popup .popup_layout > p > span {color: #666;}
+.popup .popup_layout .info {height: 90px; margin-bottom: 6px; padding: 26px 24px 0; letter-spacing: 0.4px; text-align: center; background: #f5f5f5; position: relative;}
+.popup .popup_layout .info .stit {width: 100%; font-size: 9px; color: #888; letter-spacing: 0.6px; line-height: 18px; font-weight: 700; display: block;}
+
+.popup .bbs_board {width: 100%;}
+.popup .bbs_board tr.bg {background: #f5f5f5;}
+.popup .bbs_board th, .popup .bbs_board td {height: 48px; padding: 2px 18px 0; vertical-align: middle;}
+.popup .bbs_board th {font-size: 17px; color: #c00; letter-spacing: 0.4px; font-weight: 400; text-align: left; font-family: 'Teko'; text-transform: uppercase; border-bottom: 1px solid #c00; border-right: 1px solid #fff;}
+.popup .bbs_board td {font-size: 14px; color: #000; text-align: right; border-bottom: 1px solid #000;}
+.popup .bbs_board td:first-child {color: #c00;}
+
+.popup .popup_layout .pop_btn {width: 100%; margin-top: 36px; font-size: 0; letter-spacing: -4px;}
+.popup .popup_layout .pop_btn > a {width: 192px; height: 60px; padding: 24px 0 0 2px; font-size: 18px; letter-spacing: 2px; text-align: center; display: inline-block;}
+.popup .popup_layout .pop_btn > a.btn_rd {color: #c00; background: url(/template/images/member/btn_rd_left.png) no-repeat left top, url(/template/images/member/btn_rd_right.png) no-repeat right bottom;}
+.popup .popup_layout .pop_btn > a.btn_rd:hover {color: #fff; background: #b00;}
+.popup .popup_layout .pop_btn > a.btn_gy {margin-right: 24px; color: #999; background: url(/template/images/member/btn_gy_left.png) no-repeat left top, url(/template/images/member/btn_gy_right.png) no-repeat right bottom;}
+.popup .popup_layout .pop_btn > a.btn_gy:hover {color: #fff; background: #999;}
+
+/* ETC */
+.error {width: 100%;  text-align: center; background: #fff; position: relative;}
+.error > dl {padding: 396px 0 384px; background: #f5f5f5 url(/template/images/member/bg_pattern.png) repeat;}
+.error > dl > dt {padding-bottom: 10px; font-size: 42px; color: #c00; letter-spacing: 12px; font-weight: 300; font-family: "Teko";}
+.error > dl > dd {font-size: 18px; color: #000; letter-spacing: 0.4px; font-weight: 300;}
+.error .error_footer {width: 100%; height: 132px; padding: 62px 36px 0; font-size: 11px; color: #666; letter-spacing: 0.2px; text-align: right; position: relative;}
+.error .error_footer > img {position: absolute; left: 36px; top: 43px;}
+
+/* MAINTENANCE */
+.maintain_wrap {width: 100%; text-align: center;}
+.maintain_wrap .maintain {max-width: 660px; margin: 0 auto; padding: 120px 36px 0;}
+.maintain_wrap .maintain > p {padding-top: 48px; font-size: 25px; color: #000; line-height: 34px; font-weight: 300;}
+.maintain_wrap .maintain > p > span {color: #c00;}
+.maintain_wrap .maintain > .cont {margin: 60px auto 0;}
+.maintain_wrap .maintain > .cont dl {padding: 48px 36px; line-height: 24px; background: #fff; box-sizing: border-box;}
+.maintain_wrap .maintain > .cont dl:first-child {margin-bottom: 12px;}
+.maintain_wrap .maintain > .cont dt {margin-bottom: 6px; font-size: 13px; color: #963; letter-spacing: 0.8px;}
+.maintain_wrap .maintain > .cont dd {font-size: 17px; color: #000;}
+
+/* FOOTER*/
+footer {width: 100%; margin-top: 132px; padding: 80px 0 72px; font-size: 11px; color: #666; letter-spacing: 0.2px; text-align: center; background: #000; position: relative; z-index: 2;}
+footer .cs {margin: 28px 0 10px; font-size: 14px; color: #e22; letter-spacing: 0.4px;}
+footer .cs > a {color: #e22; text-transform: none; text-decoration: underline; font-family: 'Roboto';}
+footer .cs > a:hover {color: #fd0;}
+footer > a.top {width: 72px; height:72px; padding-top: 30px; font-size: 18px; color: #666; letter-spacing: 2px; text-align: center; background: #151515; position: absolute; right: 0; bottom: 0;}
+footer > a.top:hover {color: #ccc; background: #333;}
+
+/**************** W1200 ****************/
+@media screen and (max-width: 1200px) {
+
+/* HEADER */
+header > a {margin:0 12px;}
+header > a > p {padding-left: 20px;}
+header > ul > li.logout a {width: 84px;}
+
+/* LAYOUT */
+.sub_purchase {padding: 0 24px;}
+
+.nodata {height: 240px; margin-top: 36px; padding-top: 162px; background-position: 50% 70px;}
+.nosearch {height: 240px; margin-top: 36px; padding-top: 162px; background-position: 50% 70px;}
+
+/* TOPUP */
+.sub_purchase .purchase > div {display: inline-block; width: 50%;}
+
+/* COUPON */
+.sub_purchase .coupon_explain {margin-top: 54px;}
+.sub_purchase .coupon_explain li.tit {margin-bottom: 24px;}
+
+/* BBS */
+.sub_purchase .bbs {padding: 30px 30px 36px;}
+
+.bbs .bbs_top {margin-bottom: 30px;}
+
+.bbs .bbs_list th {height: 38px; padding-top: 4px; font-size: 17px;}
+.bbs .bbs_list td {height: 64px; padding: 2px 18px 0; font-size: 15px;}
+
+/* FOOTER*/
+footer {margin-top: 108px;}
+}
+
+/**************** W1000 ****************/
+@media screen and (max-width: 1000px) {
+/* HEADER */
+header > a {margin:0 6px; font-size: 18px;}
+header > a > p {margin-top: 27px; padding-left: 12px; line-height: 20px;}
+header > ul > li {font-size: 12px;}
+header > ul > li::before, header > ul > li::after {display: block; content: "";}
+header > ul > li::after {clear: both;}
+header > ul > li.cash p {margin-top: 0; height: 16px; line-height: 16px; vertical-align: middle;}
+header > ul > li.cash p:first-child {display: block; margin-top: 18px;}
+header > ul > li.cash p.bonus {border-left: 0px solid #000;}
+header > ul > li.cash a {margin-right: 12px; transform: translateY(-7px);}
+header > ul > li.my {padding: 30px 12px 0 34px; width: 100px; background-position: 12px 50%;}
+header > ul > li.logout a {width: 72px;}	
+/* TOP UP */
+.sub_purchase .purchase > div {width: 100%;}
+.sub_purchase .purchase .price {padding-right: 0px;}
+.sub_purchase .purchase .form {margin-top: 47px; padding-left: 0px;}
+/* BBS */
+.bbs .paging ul {width: calc(100% - 204px); max-width: 480px;}
+.bbs .paging ul li {width: 10%;}
+/* ERROR */
+.error .error_footer {width: 100%; height: 243px; text-align: center; box-sizing: border-box;}
+.error .error_footer > img {position: relative; left: 0; top: 0;}
+.error .error_footer > p {margin: 28px 0 10px;}
+}
+/**************** W768 ****************/
+@media screen and (max-width: 768px) {
+/* HEADER */
+header > a > p {margin-top: 27px; padding-left: 0px; line-height: 20px; border-left: 0px solid #666;}
+header > ul > li.my {padding: 30px 20px 0 30px; width: 88px; background-position: 10px 50%;}
+
+/* TOP EVENT */	
+.top_event {height: 96px; background-size: auto 100%;}	
+.sub_purchase .pg_info {margin: 30px 0 66px;}		
+.sub_purchase .purchase .form {margin-top: 72px;}	
+.sub_purchase .purchase .form .entry .input {margin-top: 12px;}	
+.sub_purchase .purchase .form .entry .input > label {font-size: 14px; left: 18px;}	
+.sub_purchase .purchase .form .entry .input > input {padding: 0 120px 0 18px;}	
+.sub_purchase .purchase .form .entry .input_btn {width: 60px}	
+		
+	
+	
+/* COUPON */
+.sub_purchase .coupon_entry {background: #fff url(/template/images/member/coupon_bg.jpg) no-repeat center top;}
+.sub_purchase .coupon_entry > div {width: 100%; height: 360px; padding-top: 88px; text-align: center; background: url(/template/images/member//template/images/member/coupon_hide_left.jpg.png) no-repeat left top, url(/template/images/member//template/images/member/coupon_hide_right.jpg.png) no-repeat right top;}
+.sub_purchase .coupon_entry > div > h2 {font-size: 38px; color: #7fc; letter-spacing: 1.2px;}
+.sub_purchase .coupon_entry .txt {margin-top: 2px; font-size: 15px; color: #fff; font-weight: 300;}
+.sub_purchase .coupon_entry .input {width: 80%; margin: 48px auto 60px; text-align: left; background: #f5f5f5; position: relative;}
+.sub_purchase .coupon_entry .input > input {width: 80%; height: 84px; padding: 0 156px 0 36px; font-size: 19px; color: #000; line-height: 84px; border: none; background: none; position: relative; z-index: 2;}
+.sub_purchase .coupon_entry .input > input:focus {color: #000;}
+.sub_purchase .coupon_entry .input > label {font-size: 22px; color: #999; letter-spacing: 0.6px; text-transform: uppercase; font-family: "Teko"; position: absolute; left: 36px; top: 34px; z-index: 1;}
+.sub_purchase .coupon_entry .input > button {width: 120px; height: 84px; padding:0; font-size: 22px; color: #000; letter-spacing: 0.4px; background: #ddd url(/template/images/member/bg_texture_b5.png) repeat-y center top; position: absolute; right: 0; top: 0; z-index: 3;}
+.sub_purchase .coupon_entry .input > button:hover {background: #fc0;}
+/* BBS */
+.sub_purchase .bbs {padding: 30px 10px;}
+.bbs .bbs_top {text-align: center;}
+.bbs .bbs_top .search {position: relative; margin-top: 10px;}
+
+.bbs .bbs_list td {padding: 0; text-align: center;}	
+.bbs .bbs_list th:first-child {width: 24px; padding: 0; text-align: center;}	
+.bbs .state {width: 72px;}
+
+.bbs .paging a {min-width: 24px; padding: 5px 0 0;}
+.bbs .paging ul {margin: 0 auto; width: calc(100% - 96px); max-width: 300px; padding: 0 10px;}
+.bbs .paging ul li {width: 20%;}
+.bbs .paging ul li.pc {display: none;}
+.bbs .paging ul li.current {min-width: 24px;}
+/* ERROR */
+.error > dl {padding: 220px 0 200px;}
+
+/* MAINTENANCE */	
+.maintain_wrap .maintain {padding: 60px 12px 0;}	
+.maintain_wrap .maintain img {width: 70%;}	
+.maintain_wrap .maintain > p {padding-top: 30px; font-size: 19px; line-height: 24px;}	
+.maintain_wrap .maintain > .cont {margin: 36px auto 0;}	
+.maintain_wrap .maintain > .cont dl {padding: 30px 20px; line-height: 20px;}	
+.maintain_wrap .maintain > .cont dt {font-size: 14px;}	
+.maintain_wrap .maintain > .cont dd {font-size: 14px;}	
+	
+	
+}
+/**************** W600 ****************/
+@media screen and (max-width: 600px) {
+/* HEADER */
+header {height: 144px; text-align: center;}
+header > a {font-size: 18px;}
+header > a > p {margin-top: 27px; padding-left: 0px; line-height: 20px; border-left: 0px solid #666;}
+header > ul {position: absolute; left: 0; top: 72px; right: 0; width: 100%;}
+header > ul::before, header > ul::after {display: block; content: "";}
+header > ul::after {clear: both;}
+header > ul > li {font-size: 12px;}
+header > ul > li::before, header > ul > li::after {display: block; content: "";}
+header > ul > li::after {clear: both;}
+header > ul > li.cash {float: left;}
+header > ul > li.cash p {margin-top: 0; height: 16px; line-height: 16px; vertical-align: middle; text-align: left;}
+header > ul > li.cash p:first-child {display: block; margin-top: 18px;}
+header > ul > li.cash p.bonus {border-left: 0px solid #000;}
+header > ul > li.cash a {margin-right: 12px; transform: translateY(-7px);}
+header > ul > li.my {position: absolute; top: 0; right: 0;}
+header > ul > li.logout {float: right; display:none;}
+/* TOPUP */
+.sub_purchase .pg_list {   margin: -20px 0 0 -10px;}
+.sub_purchase .pg_list li {width: 25%; padding-left: 10px;}
+/* COUPON */
+.sub_purchase .coupon_entry .txt {font-size: 15px;}
+.sub_purchase .coupon_entry .input {width: 80%; min-width: 250px;}
+.sub_purchase .coupon_entry .input > input {width: 80%; min-width: 250px; height: 50px;}
+.sub_purchase .coupon_entry .input > label {left: 12px; top: 17px; font-size: 18px;}
+.sub_purchase .coupon_entry .input > button {left: 50%; top: 68px; margin-left: -48px; width: 96px; height: 50px;}
+.sub_purchase .coupon_explain li.txt {font-size: 12px;}
+/* BBS */
+.sub_purchase .bbs {padding: 30px 10px;}
+.bbs .bbs_top .search .input > label {font-size: 12px; color: #999; letter-spacing: 0.4px; position: absolute; left: 12px; top: 12px; z-index: 1;}
+.bbs .bbs_top .search .input > input {width: 54px;}
+.bbs .bbs_top .search > select {width: 105px; border-right: none;}
+.bbs .bbs_top .search > select:nth-child(3) {width: 95px; border-right: none;}
+.bbs .bbs_top .search > button {width: 64px;}
+.bbs .bbs_list tr.bbs_tit {display: none;}
+.bbs .bbs_list tr.mobile_top td {border-top: 2px solid #c00;}
+.bbs .bbs_list tr.mobile_top td:first-child {border-top: 2px solid #000;}
+.bbs .bbs_list td {padding: 0 3px; box-sizing: border-box; font-size:12px;}
+.bbs .bbs_list td:first-child {width: 8%; padding: 0; text-align: center; font-size: 12px;}
+.bbs .bbs_list td.state_btn {width: 17%; padding: 0;}
+.bbs .bbs_list td p.mobile {display: block; font-size: 12px;}
+.bbs .bbs_list td.nominal span {display: inline; font-size: 10px; color: #c00; font-weight: 500;}
+
+.bbs .bbs_list td:nth-child(3) p.mobile {font-size: 10px;}	
+.bbs .bbs_list tr.bbs_tit {display: none;}	
+.bbs .bbs_list tr.mobile_top td, .bbs .bbs_list tr:nth-child(2) td  {border-top: 2px solid #c00;}	
+.bbs .bbs_list tr.mobile_top td:first-child, .bbs .bbs_list tr:nth-child(2) td:first-child {border-top: 2px solid #000;}	
+.bbs .bbs_list td.pc {display: none;}	
+.bbs .bbs_list td .mobile_tit {display: inline; font-size: 10px; color: #c00; font-weight: 500;}	
+.bbs .bbs_list td.status_btn {width: 17%; padding: 0;}
+
+.bbs .state {width: 100%; padding-top: 11px; font-size: 9px;}
+
+
+
+/* TOPUP */
+.bbs .bbs_list.topup td.date {width: 40%; font-size: 10px; text-align: left;}
+.bbs .bbs_list.topup td.date p {margin-top: 2px; font-size: 12px; font-weight: 400; text-transform: none;}
+.bbs .bbs_list.topup td.tit {display: none;}
+.bbs .bbs_list.topup td.nominal {width: 38%; font-size: 12px; text-align: left;}
+.bbs .bbs_list.topup td.balance {display: none;}
+/* CASH */
+.bbs .bbs_list.cash td.date {width: 20%; font-size: 10px;}
+.bbs .bbs_list.cash td.date p {font-size: 12px; font-weight: 400;}
+.bbs .bbs_list.cash td.game {display: none;}
+.bbs .bbs_list.cash td.tit {width: 29%; padding-left: 6px; font-size: 12px;}
+.bbs .bbs_list.cash td.nominal {width: 24%; font-size: 12px; text-align: left;} 
+.bbs .bbs_list.cash td span {display: block; font-size: 10px;}
+/* COUPON */
+.bbs .bbs_list.coupon td.date {width: 20%; font-size: 10px;}
+.bbs .bbs_list.coupon td.tit {width: 41%; padding-left: 6px; font-size: 12px;}
+.bbs .bbs_list.coupon td.code {width: 22%; font-size: 12px;}
+
+.popup .popup_layout {width: auto; margin: 0; padding: 24px;  margin-top:-180px;  right:20px; left:20px;}
+.popup .popup_layout_cvs {margin-top: -240px;}
+.popup .popup_layout > p {  font-size: 14px;  line-height:1.5;}
+.popup .popup_layout > p > strong {font-size:18px;}
+.popup .popup_layout > p.completed {font-size:14px; line-height:1.5;}
+/* .popup .popup_layout .info {height:auto; padding:20px;} */
+.popup .popup_layout > p {font-size:14px;}
+
+.popup .popup_layout > h3 {margin-bottom: 20px;}
+.popup .popup_layout > p {font-size: 14px; line-height: 20px;}
+.popup .popup_layout > p > strong {margin-bottom: 8px; font-weight: 400;}
+.popup .popup_layout > p.completed {padding-top: 68px;}
+.popup .popup_layout > p.warning {padding-top: 68px;}
+
+.popup .popup_layout .pop_btn {width: 100%; margin-top: 24px; font-size: 0; letter-spacing: -4px;}
+.popup .popup_layout .pop_btn > a {width: 40%; max-width: 192px; padding: 23px 0 0 2px; font-size: 16px;}
+.popup .popup_layout .pop_btn > a.btn_gy {margin-right: 12px;}
+
+footer {margin-top:60px;     padding: 48px 0 96px;}
+footer > img {width: 120px;}
+footer .email {margin: 16px 0 8px; font-size: 14px;}
+footer .copyright {font-size: 12px;}
+footer > a.top {margin-right: -30px; right: 50%;}
+
+
+}
+/**************** W440 ****************/
+@media screen and (max-width: 440px) {
+body {min-width: 320px;}
+/* HEADER */
+header > ul > li.my {padding: 30px 20px 0 20px; background: none;}
+/* TOPUP */
+.sub_purchase {padding: 0 15px;}
+.sub_purchase .pg_list li {width: calc(100% / 3); padding-left: 10px;}
+.sub_purchase .pg_explain > p {font-size: 12px; line-height: 20px; background-size: auto 20px;}
+.sub_purchase .purchase .price li {font-size: 12px; line-height: 15px; padding: 16px 12px 0; }
+.sub_purchase .purchase .price li > strong {width: 68px;}
+.sub_purchase .purchase .price_explain {font-size: 12px;}
+.sub_purchase .purchase .form .merchant {padding: 36px 24px 35px;}
+.sub_purchase .purchase .form .merchant li > img {margin-top: 5px; width: 80%;}
+.sub_purchase .purchase .form .entry {margin-bottom: 2px; padding: 24px 24px 36px; background: #fff;}
+.sub_purchase .purchase .form .entry_txt {font-size: 12px; line-height: 20px;}
+.sub_purchase .purchase .form .entry_email {font-size: 12px; line-height: 20px;}
+.sub_purchase .purchase .form .entry .warning {font-size: 12px;}
+.sub_purchase .purchase .form .entry_btns > p > button {line-height: 18px;}
+.sub_purchase .purchase .form .result_info li > p {font-size: 12px;}
+/* MAINTENANCE */
+.maintain_wrap .maintain > p {font-size: 19px; line-height: 28px;}
+.maintain_wrap .maintain > .cont dd {font-size: 14px;}
+/* BBS */
+.bbs .bbs_list td {font-size:10px;}
+.bbs .bbs_top .search {width: 100%;}
+.bbs .bbs_top .search .input > label {font-size: 12px;}
+.bbs .bbs_top .search .input > input {width: 44px;}
+.bbs .bbs_top .search > select {width: 100px; padding: 8px 6px;}
+.bbs .bbs_top .search > select:nth-child(3) {width: 74px;}
+.bbs .bbs_top .search > button {width: 52px;}
+.bbs .bbs_list td.state_btn {width: 23%;}
+
+.popup .bbs_board th {font-size:14px;}
+.popup .bbs_board td {font-size:12px;}
+
+
+/* .popup .popup_layout .pop_btn > a {margin:0 auto 10px !important; padding:0; height:45px; line-height:45px;} */
+}

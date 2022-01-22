@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+#wrap {background:url(/template/images/comum/backgorund_auth.jpg) top center no-repeat;}
+#wrap_single {background:url(/template/images/comum/backgorund_auth.jpg) top center no-repeat;}
+#wrap_single.password {background:url(/template/images/comum/pbtr_bg_all_account.jpg) top center no-repeat;}
+
+/* COMMON */
+a.btn {font-family: 'Anton', 'Open Sans', Arial, sans-serif; display:block; text-transform:uppercase; letter-spacing:0.5px;}
+.tab_tit {font-family: 'Anton', 'Open Sans', Arial, sans-serif; font-style:italic; letter-spacing:0.5px;}
+
+.m_t2 {margin-top:2px;}
+.m_t5 {margin-top:5px;}
+.m_t10 {margin-top:10px;}
+.m_t12 {margin-top:12px;}
+.m_t30 {margin-top:30px;}
+.m_b2 {margin-bottom:2px;}
+.m_b5 {margin-bottom:5px;}
+.m_b20 {margin-bottom:20px;}
+.m_b25 {margin-bottom:25px;}
+.m_b30 {margin-bottom:30px;}
+.m_r2 {margin-right:2px;}
+.m_r10 {margin-right:10px;}
+
+
+/* GNB */
+.GNB {width:100%; height:95px; border-top:1px solid #000; border-bottom:1px solid #000; background:rgba(0,0,0,0.6); position:relative; z-index:12;}
+.GNB {background:url(/template/images/comum/gnb_bg_bk.png)\9;} /* ie8 */
+	.GNB .gnb_cont {width:1020px; margin:0 auto; position:relative; z-index:11;}
+	.GNB .gnb_bg {width:100%; height:95px; background:url(/template/images/comum/gnb_bg.png) top center no-repeat; position:absolute; top:0; left:0; z-index:10;}
+	.GNB .logo {width:265px; margin-top:20px; margin-left:5px; float:left;}
+	.GNB .logo_ct {width:265px; margin:20px auto 0;}
+	.GNB .lang_select {font-size:10px; color:#60d5ff; text-align:left; text-transform:uppercase; border:1px solid #122a32; border-top:none; background:url(/template/images/comum/gnb_lang_arrow_open.png) top left no-repeat; background-position:85px 8px; background-color:rgba(0,0,0,0.8); cursor:pointer; display:inline-block; position:absolute; top:0; right:0; z-index:13;}
+	.GNB .lang_select li {width:71px; padding:5px 15px 6px; line-height:10px; position:relative;}
+	.GNB .lang_select li .options {width:103px; max-height:0; color:#426977; position:absolute; top:22px; left:-1px; transition:all ease 0.3s; background-color:transparent; overflow:hidden; display:block;}
+	.GNB .lang_select li .options li {border-bottom:1px solid #0c232b;}
+	.GNB .lang_select li .options li:hover {width:103px; color:#8eb8c6; background:rgba(59,99,112,1);}
+	.GNB .lang_select li .options li:last-of-type {border-bottom:none;}
+	.GNB .lang_select li .options.open {max-height:1000%; color:#426977; background:url(/template/images/comum/gnb_lang_bg.png) top left repeat-x; background-color:#122a32;}
+
+	.GNB .gnb_menu {float:right;}
+	.GNB .gnb_menu .menu {float:left; position:relative;}
+	.GNB .gnb_menu .menu a {display:block;}
+	.GNB .gnb_menu .menu .depth1_1st a {width:100px; height:95px; background:url(/template/images/comum/gnb_menu_haberler.png) no-repeat;}
+	.GNB .gnb_menu .menu .depth1_2nd a {width:122px; height:95px; background:url(/template/images/comum/gnb_menu_kilavuzu.png) no-repeat;}
+	.GNB .gnb_menu .menu .depth1_3rd a {width:135px; height:95px; background:url(/template/images/comum/gnb_menu_indir.png) no-repeat;}
+	.GNB .gnb_menu .menu .depth1_4th a {width:127px; height:95px; background:url(/template/images/comum/gnb_menu_siralama.png) no-repeat;}
+	.GNB .gnb_menu .menu .depth1_5th a {width:117px; height:95px; background:url(/template/images/comum/gnb_menu_forum.png) no-repeat;}
+	.GNB .gnb_menu .menu .depth1_6th a {width:129px; height:95px; background:url(/template/images/comum/gnb_menu_destek.png) no-repeat;}
+	.GNB .gnb_menu .menu p a:hover {background-position:0 -95px;}
+
+	.GNB .gnb_menu .depth2 {width:100%; border-top:1px solid #000; background:rgba(79,13,5,0.9); box-shadow:1px 1px 1px rgba(0,0,0,0.3); position:absolute; top:100%; left:0; display:none;}
+	.GNB .gnb_menu .depth2 {background:#622 \9;} /* ie8 */
+	.GNB .gnb_menu .depth2 li {text-shadow:1px 1px 1px rgba(0,0,0,0.8); border:1px solid #400; border-top:1px solid #37100c; border-bottom:1px solid #6a1e11; clear:both; display:block;}
+	.GNB .gnb_menu .depth2 li a {padding:12px 14px; color:#bbb; font-style:normal; line-height:16px; display:block;}
+	.GNB .gnb_menu .depth2 li a:hover {color:#fff; text-decoration:none; background:rgba(106,30,17,0.8);}
+	.GNB .gnb_menu li:hover .depth2 {display:block;}
+	.GNB .gnb_menu li:hover a.depth1_on {background-position:0 -95px;}
+	
+/* TOP_PROMOTION */
+#promotion {background:url(/template/images/comum/top_promo_bg.jpg);}
+	#promotion .banner {width:1020px; height:120px; margin:0 auto; position:relative;}
+	#promotion .close {position:absolute; top:20px; right:20px;}
+
+/* LAYOUT */
+.substance {width:1020px; margin:35px auto 0; position:relative;}
+
+.contents {width:730px; float:left; margin-top:15px;}
+.contents_single {width:730px; margin:0 auto;}
+.contents_full {width:1020px; margin:0 auto;}
+
+/* Start BTN */
+.section_common {clear:both; width:270px; height:151px;}
+.section_common .gamestart {position:relative; height:151px;}
+.section_common .gamestart div.bg {position:absolute; left:0; top:0; width:270px; height:151px;}
+.section_common .gamestart div.btn_default {position:absolute; left:0; top:0; width:270px; height:151px; background:no-repeat url('/template/images/comum/btn_lnb_start.jpg') 0 15px;}
+	.gamestart .bg .img {position: absolute; top: 0; left: 0px; width:270px; height: 151px; background:no-repeat url('/template/images/comum/btn_lnb_start_ov.png') 0 8px;}
+	.gamestart .bg .txt {position: absolute; top: 30px; left: 28px; width:200px; height: 89px; background:no-repeat url('/template/images/comum/btn_lnb_start_txt.png') 0 0;}
+	.gamestart .bg .light {position: absolute; top: 17px; left: 48px; width:180px; height: 71px; background:no-repeat url('/template/images/comum/btn_lnb_start_light.png') 0 0;}
+	.gamestart .bg .over {position: absolute; top: 0px; left: 0px; width:270px; height: 136px;}
+	.gamestart .bg .over .piece1 {position: absolute; top: -44px; left: 200px; width:57px; height: 35px; background:no-repeat url('/template/images/comum/btn_lnb_start_piece1.png') 0 0;}
+	.gamestart .bg .over .piece2 {position: absolute; top: -57px; left: 120px; width:23px; height: 54px; background:no-repeat url('/template/images/comum/btn_lnb_start_piece2.png') 0 0;}
+	.gamestart .bg .over .piece3 {position: absolute; top: -34px; left: 80px; width:41px; height: 41px; background:no-repeat url('/template/images/comum/btn_lnb_start_piece3.png') 0 0;}
+	.gamestart .bg .over .piece4 {position: absolute; top: -31px; left: 18px; width:55px; height: 16px; background:no-repeat url('/template/images/comum/btn_lnb_start_piece4.png') 0 0;}
+	.gamestart .bg .over .piece5 {position: absolute; top: -44px; left: 200px; width:57px; height: 35px; background:no-repeat url('/template/images/comum/btn_lnb_start_piece1.png') 0 0;}
+	.gamestart .bg .over .piece6 {position: absolute; top: -34px; left: 80px; width:41px; height: 41px; background:no-repeat url('/template/images/comum/btn_lnb_start_piece3.png') 0 0;}
+	
+.gamestart .btn_gamestart {position:absolute; left:0; top:0; width:270px; height:136px; text-indent:-10000px; display:block; }
+
+/* LNB */
+.LNB {width:270px; margin-right:20px; float:left;}
+	.LNB .login .register a, .LNB .login .sso a {display: block; height:35px; padding-top:14px; font-size:19px; text-align:center; background:url(/template/images/comum/btn_lnb_register.jpg) no-repeat; text-decoration:none; color: #333;}
+	.LNB .login .sso a {position: relative; z-index: 2; color: #fff}
+	.LNB .login .sso a:before {content: ""; width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: rgba(136, 17, 12, 0.9); z-index: -1;}
+	.LNB .login .register a:hover, .LNB .login .sso a:hover {background-position:0 -49px;}
+	.LNB .login .register a:hover {color: #b00;}
+	.LNB .login .sso a:hover {color: #fff5c1;}
+	/* .LNB .login .register a {height:35px; padding-top:14px; font-size:19px; text-align:center; background:url(/template/images/comum/btn_lnb_register.jpg) no-repeat;}
+	.LNB .login .register a:hover {color:#b00; background-position:0 -49px; text-decoration:none;} */
+	.LNB .login .entry {height:139px; padding:24px 20px 0; background:url(/template/images/comum/lnb_login_bg.png) no-repeat; box-shadow: -2px 3px 10px #000, 0 0 100px #222 inset;}
+	.LNB .login .entry li {display:inline-block; *display:inline; zoom:1; float:left;}
+	.LNB .login .entry input {width:120px; height:42px; padding:0 10px; font-size:15px; color:#888; line-height:1; letter-spacing:0.5px; border:1px solid #000; border-right:none; font-family: 'Anton', 'Open Sans', Arial; background:rgba(62, 62, 62, 0.5);}
+	.LNB .login .entry input {height:28px \9; padding-top:14px \9; background:#333 \9;} /* ie8 */
+	.LNB .login .entry input.dn {height:42px; border-top:none;}
+	.LNB .login .entry input.dn {height:28px \9;} /* ie8 */
+	.LNB .login .entry .btn_login a {width:89px; height:53px; padding-top:35px; font-size:18px; color:#fcc; text-align:center; background:url(/template/images/comum/btn_lnb_login.jpg) no-repeat;}
+	.LNB .login .entry .btn_login a:hover {color:#fff; background-position:0 -87px; text-decoration:none;}
+	.LNB .login .find_pw {width:300px; margin-top:10px; clear:both;}
+	.LNB .login .find_pw a {font-size:12px; color:#ddd; font-style:italic; text-decoration:none;}
+	.LNB .login .find_pw a:hover {border-bottom: 1px solid #ddd;}
+	/* .LNB .login .find_pw {width:140px; margin-top:10px; clear:both;}
+	.LNB .login .find_pw a {font-size:13px; color:#ccc; font-style:italic; text-decoration:underline;}
+	.LNB .login .find_pw a:hover {color:#c44;} */
+
+	.LNB .logout .my_info {height:192px; padding:20px 15px 0; background:rgba(0,0,0,0.5) url(/template/images/comum/lnb_logout_bg.png) no-repeat;}
+	.LNB .logout .my_info .my_nick {font-size:18px; color:#fff; letter-spacing:0.5px; font-style:italic; text-shadow:1px 1px 0 #000; font-family: 'Anton', 'Open Sans', Arial;}
+	.LNB .logout .my_info .my_nick img {width:20px; height:20px;}
+	.LNB .logout .my_info .grade {margin-top:32px; padding-left:8px; font-size:13px; color:#ddd;}
+	.LNB .logout .my_info .grade p:not(:last-child) {border-bottom: 1px solid rgba(216, 209, 205, 0.3); padding-bottom: 3px;}
+	.LNB .logout .my_info .grade span {width:78px; font-size:14px; color:#fff; font-weight:bold; letter-spacing:0; display:inline-block; *display:inline; zoom:1;}
+	.LNB .logout .my_info .btn {margin-top:30px; position:relative;}
+	.LNB .logout .my_info .btn p {display:inline-block; *display:inline; zoom:1; vertical-align:top;}
+	.LNB .logout .my_info .btn p.right {position:absolute; top:0; right:0;}
+
+	.LNB .cs {margin-top:20px; display:inline-block;}
+	.LNB .cs li {width:134px; height:120px; float:left;}
+
+	.LNB .ranking {margin-top:15px;}	
+		.LNB .ranking .main_tit {padding:20px 0 13px 20px; background:url(/template/images/comum/lnb_rank_bg_tit.jpg) top left no-repeat; background-color:#fff; position:relative;}
+		.LNB .ranking .main_tit a:hover {text-decoration:none;}
+		.LNB .ranking .main_tit .more {position:absolute; top:20px; right:20px;}	
+		
+		.LNB .ranking .tab_tit {width:270px; height:41px; font-size:18px; color:#fff; text-align:center;}	
+		.LNB .ranking .tab_tit li {display:inline-block; *display:inline; zoom:1; float:left;}
+		.LNB .ranking .tab_tit a {width:90px; height:30px; padding-top:11px; font-size:18px; color:#222;}
+		.LNB .ranking .tab_tit .tit_first a {background:url(/template/images/comum/lnb_rank_tab_1st.jpg) top left no-repeat;}
+		.LNB .ranking .tab_tit .tit_last a {background:url(/template/images/comum/lnb_rank_tab_2nd.jpg) top left no-repeat;}
+		.LNB .ranking .tab_tit .tit_first_on {width:90px; height:30px; padding-top:11px; background:url(/template/images/comum/lnb_rank_tab_1st.jpg) top left no-repeat; background-position:0 -82px; text-transform:uppercase;}
+		.LNB .ranking .tab_tit .tit_last_on {width:90px; height:30px; padding-top:11px; background:url(/template/images/comum/lnb_rank_tab_2nd.jpg) top left no-repeat; background-position:0 -82px; text-transform:uppercase;}
+		.LNB .ranking .tab_tit a:hover {color:#bbb; background-position:0 -41px; text-decoration:none;}
+		
+		.LNB .ranking .champion {height:45px; padding:18px 0 16px 94px; font-size:12px; color:#467; background:url(/template/images/comum/lnb_rank_1st.jpg) top left no-repeat; background-color:#fff; overflow:hidden;}
+		.LNB .ranking .champion .nick {font-size:20px; color:#c44; font-style:italic; line-height:1; letter-spacing:0.5px; font-family: 'Anton','Open Sans', Arial, Verdana, sans-serif; display:block;}
+		.LNB .ranking .champion .rank {margin-top:5px; color:#426977; font-weight:bold; font-size:12px;  }
+		.LNB .ranking .champion img {width:18px; height:18px; margin-right:4px; position:relative; top:2px;}
+		.LNB .ranking .grade {height:104px; padding:16px 20px 19px; background:url(/template/images/comum/lnb_rank_bg.jpg) no-repeat;}
+		.LNB .ranking .grade p {height:28px; position:relative;}
+		.LNB .ranking .grade p img {width:18px; height:18px;}
+		.LNB .ranking .grade p .nick {width:108px; height:24px; padding-left:26px; overflow:hidden; display:inline-block; *display:inline; zoom:1; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; display:inline-block; font-weight:bold; letter-spacing:-1px; }
+		.LNB .ranking .grade p .second {background:url(/template/images/comum/lnb_rank_2nd.jpg) no-repeat;}
+		.LNB .ranking .grade p .third {background:url(/template/images/comum/lnb_rank_3rd.jpg) no-repeat;}
+		.LNB .ranking .grade p .fourth {background:url(/template/images/comum/lnb_rank_4th.jpg) no-repeat;}
+		.LNB .ranking .grade p .fifth {background:url(/template/images/comum/lnb_rank_5th.jpg) no-repeat;}
+		.LNB .ranking .grade p .exp {width:84px; position:absolute; right:0;  color:#426977; font-weight:bold; font-size:12px;  }
+		.LNB .ranking .grade p .exp img {position:relative; top:2px;}		
+		
+	.LNB .lnb_sub_banner {width:270px; height:179px; margin-top:15px;}	
+		
+/* LEFT_BANNER */
+.left_banner {position:absolute; top:383px; left:-155px;}
+	.left_banner img {width:135px; height:441px;}
+
+/* QUICK */
+.quick_menu {width:115px; position:absolute; top:383px; right:-135px;}
+	.quick_menu ul {padding:15px 0; border:1px solid #333; border-top:none; background:url(/template/images/comum/quick_bg.png) top left no-repeat; background-color:#000;}
+	.quick_menu ul li {width:81px; height:53px; padding:10px 16px;}
+
+/* FOOTER */
+.footer_area {padding:50px 0 10px; clear:both; overflow: hidden;}
+	.footer {padding:30px 0; border-top:1px solid #333; background:#010101; }
+		.footer .up {width:1020px; margin:0 auto;}
+		.footer .up .logo {float:left;}
+		.footer .up .logo img {margin-right:30px; display:inline-block; *display:inline; zoom:1; background-color:#f00;}
+		.footer .up .logo img.nfinity {width:103px; height:27px;}
+		.footer .up .logo img.zepetto {width:92px; height:27px;}
+		.footer .up .menu {line-height:0; float:right;}
+		.footer .up .menu li {height:24px; margin-left:58px; display:inline-block; *display:inline; zoom:1;}
+		.footer .up .menu li img {float:right;}
+		.footer .up .menu li.haberler {width:49px; margin-left:0;}
+		.footer .up .menu li.kilavuzu {width:53px;}
+		.footer .up .menu li.indir {width:92px;}
+		.footer .up .menu li.siralama {width:74px;}
+		.footer .up .menu li.forum {width:60px;}
+		.footer .up .menu li.destek {width:75px; margin-left:57px;}
+
+		.footer .dn {width:1020px; margin:0 auto; padding-top:10px; font-size:12px; line-height:16px; clear:both;}
+		.footer .dn .sns {padding-top:15px; margin-right:65px; float:left;}
+		.footer .dn .sns li {display:inline-block; *display:inline; zoom:1;}
+		.footer .dn .sns li img {width:41px; height:40px; margin-right:5px;}
+		.footer .dn .util li {margin-bottom:10px; color:#1984ab; display:inline-block; *display:inline; zoom:1;}
+		.footer .dn .util li a {color:#1984ab;}
+		.footer .dn .util li a:hover {font-style:normal;}
+		.footer .dn .util li span {margin:0 8px 0 10px; font-size:10px; color:#444; font-style:italic;}
+
+		.footer .dn .copyright {float: left; font-size:12px; color:#555; line-height:16px;}
+		.footer .dn .copyright p {font-size:13px; line-height:30px;}
+		
+		.footer .simple {width:1020px; height:60px; margin:0 auto;}
+		.footer .simple .logo {float:left;}
+		.footer .simple .logo img {margin-right:30px; display:inline-block; *display:inline; zoom:1;}
+		.footer .simple .logo img.nfinity {width:53px; height:27px;}
+		.footer .simple .logo img.zepetto {width:92px; height:27px;}
+
+		.footer .simple .copyright {margin-left:20px; font-size:12px; color:#555; line-height:16px; float:left;}
+		.footer .simple .copyright p {font-size:13px; line-height:30px;}

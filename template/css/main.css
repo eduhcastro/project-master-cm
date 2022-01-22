@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* MAIN_CONTENTS */
+.main_tit a {font-size:26px; color:#000; font-style:italic; letter-spacing:0.5px; font-family: 'Anton', 'Open Sans', Arial, sans-serif; display:block;}
+
+.main_banner {width:730px; height:348px; position:relative;}
+	.main_banner .main_slide {display:block;}
+	.main_banner .main_slide .owl-stage-outer > div { width: 730px; height: 348px; }	
+	.main_banner .main_slide .owl-stage-outer > div a	{ display: block; }
+	.main_banner .main_slide .owl-stage-outer > div a img	{ width: 730px; height: 348px; }
+
+	.main_banner .owl-dots {position:absolute; left:35px; bottom:29px; z-index:9;}
+	.main_banner .owl-dots div {margin-right:8px; float:left;}
+	.main_banner .owl-dots div span {width:40px; height:6px; background: #fff; text-indent:-999em; display:block;}
+	.main_banner .owl-dots div.active span { background-color: #c20602; }
+	.main_banner .owl-dots:after {content:''; display:block; clear:both;}
+	.main_banner .owl-dots {*zoom:1;}
+	.main_banner .owl-prev, .main_banner .owl-next { position: absolute; top: 0; width: 0px; height: 100%; background-position: center center; background-repeat: no-repeat; transition: width 0.2s; overflow: hidden;}
+	.main_banner .owl-prev {left: 0; background-image: url(../../../images/common/btn_paging_prev_on.png);}
+	.main_banner .owl-next {right: 0; background-image: url(../../../images/common/btn_paging_next_on.png);}
+	.main_banner .main_slide:hover .owl-next, .main_banner .main_slide:hover .owl-prev {width: 50px;}
+
+.main_news {margin-top:20px; background-color:#fff;}
+		.main_news .news {width:315px; height:292px; padding:20px 20px 20px 30px; background:url(/template/images/comum/news_bg.jpg) top left no-repeat; float:left;}
+			.main_news .news .main_tit {margin-bottom:20px; position:relative;}
+			.main_news .news .main_tit a:hover {font-style:italic; text-decoration:none;}	
+			.main_news .news .main_tit .more {position:absolute; top:2px; right:0;}	
+			.main_news .news .special {height:106px; padding:5px; background:#eee; border:1px solid #ddd; position:relative;}	
+			.main_news .news .special li {display:inline-block; *display:inline; zoom:1; float:left;}	
+			.main_news .news .thumb {margin-right:10px;}	
+			.main_news .news .thumb img {width:154px; height:106px;}
+			.main_news .news .thumb .bul {position:absolute; top:-2px; left:-2px;}	
+			.main_news .news .thumb .bul img {width:70px; height:70px;}	
+			.main_news .news .title {height:33px; margin-bottom:3px; padding:8px 0 4px; overflow:hidden;}
+			.main_news .news .title a {font-size:18px; color:#c44; font-weight:bold; font-style:italic;}	
+			.main_news .news .cont {width:130px; line-height:16px; overflow:hidden;}
+			.main_news .news .cont .title {height:33px; line-height:16px; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-word;}
+			.main_news .news .cont .txt {width:130px; height:34px; overflow:hidden; text-overflow:ellipsis; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; word-wrap:break-word;}
+			.main_news .news .cont .date {padding-top:4px; font-size:12px; color:#999;}
+			.main_news .news .list {margin-top:18px; clear:both;}	
+			.main_news .news .list li {height:25px; padding-left:11px; background:url(../../../images/common/bullet_list.png) top left no-repeat;}	
+			.main_news .news .list li a {width:180px; font-size:14px; line-height:20px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; display:inline-block; font-weight:bold; letter-spacing:-1px; }	
+			.main_news .news .list li span {font-size:13px; color:#999; float:right;}	
+
+		.main_news .esports {width:315px; padding:20px 30px 30px 20px; background:url(/template/images/comum/esports_bg.jpg) top left no-repeat; float:left;}
+			.main_news .esports .main_tit {margin-bottom:20px; position:relative;}	
+			.main_news .esports .main_tit a:hover {font-style:italic; text-decoration:none;}	
+			.main_news .esports .main_tit .more {position:absolute; top:2px; right:0;}
+			.main_news .esports .thumb img {width:316px; height:118px;}
+			.main_news .esports .cont {width:316px; height:113px;}
+			.main_news .esports .cont .title {padding-top:18px;}	
+			.main_news .esports .cont .title  a {width:316px; height:20px; font-size:18px; color:#c44; line-height:14px; font-weight:bold; font-style:italic; letter-spacing:-0.5px; text-overflow:ellipsis; white-space:nowrap; overflow:hidden; display:inline-block;}	
+			.main_news .esports .cont .date {margin-bottom:8px; color:#999; line-height:11px;}	
+			.main_news .esports .cont .txt a { display:block; width:316px; height:54px; font-size:13px; line-height:17px; text-overflow:ellipsis; overflow:hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; word-wrap:break-word; clear:both;}	
+
+		.main_news a:hover {font-style:normal;}
+
+.main_event {margin-top:20px; clear:both;}
+	.main_event .fix {float:left;}
+	
+	.main_event .event {width:355px; height:242px; float:right; position:relative;}
+		.main_event .event .main_event_slide {display:block;}
+		.main_event .event .main_event_slide li {position:absolute; top:0; left:0; z-index:8;}	
+	
+		.main_event .event .main_event_slide_btn {position:absolute; left: 0; bottom: 20px; width: 100%; height: 6px; z-index:9; text-align: center; }
+		.main_event .event .main_event_slide_btn li { display: inline-block; *display: inline; *zoom: 1; margin-left: 8px; }
+		.main_event .event .main_event_slide_btn li:first-child	{ margin: 0; }
+		.main_event .event .main_event_slide_btn li a {width:40px; height: 6px; background: #fff; text-indent:-999em; display:block;}
+		.main_event .event .main_event_slide_btn li a.active { background-color: #c20602; }
+		.main_event .event .main_event_slide_btn:after {content:''; display:block; clear:both;}
+		.main_event .event .main_event_slide_btn {*zoom:1;}
