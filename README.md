@@ -1,7 +1,8 @@
 # POINT BLANK CM
 
-## 💻 Detalhes
-#### Ajustes e melhorias
+Unfinished project.
+
+## 💻 Details
 
 NEWS:
 ```
@@ -18,3 +19,6 @@ NEWS:
 - Ranks User/Clan
 - Events
 - More..
+
+Contact: CastroMS#8830 / skillerm.cm@gmail.com / fb.com/eduhcm
+
