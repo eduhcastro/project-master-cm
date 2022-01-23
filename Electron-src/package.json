@@ -1,0 +1,50 @@
+{
+  "name": "pointblankmasterdashboard",
+  "productName": "Point Blank Master DashBoard",
+  "author": "Skillerm",
+  "version": "1.0.0",
+  "main": "./debug/index.js",
+  "scripts": {
+    "start": "electron ./build/index.js",
+    "debug": "electron ./debug/index.js",
+    "publish": "electron-builder --win -p always",
+    "build": "electron-builder --win",
+    "build1": "electron-packager . FlashBrowser --platform=darwin --overwrite --icon=themes/external/icon.icns",
+    "build2": "electron-packager . FlashBrowser --platform=win32 --overwrite --icon=themes/external/icon.ico",
+    "teste": "node teste.js"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "9.0.5",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "@cliqz/adblocker-electron": "^1.23.0",
+    "axios": "^0.24.0",
+    "cross-fetch": "^3.1.4",
+    "dotenv": "^10.0.0",
+    "electron-alert": "^0.1.19",
+    "electron-context-menu": "^3.1.1",
+    "electron-navigation": "^6.6.6",
+    "electron-updater": "^4.3.5",
+    "getmac": "^5.20.0",
+    "resolve-dependencies": "^6.0.7"
+  },
+  "build": {
+    "productName": "PBCastro Dashboard",
+    "appId": "com.experiment.pbcastrodashboard",
+    "directories": {
+      "buildResources": "src"
+    },
+    "win": {
+      "asar": true,
+      "target": "nsis",
+      "icon": "debug/src/assets/external/icon.ico"
+    },
+    "nsis": {
+      "installerIcon": "debug/src/assets/external/icon.ico",
+      "installerHeaderIcon": "debug/src/assets/external/icon.ico",
+      "deleteAppDataOnUninstall": true
+    }
+  }
+}

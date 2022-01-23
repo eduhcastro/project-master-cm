@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="../assets/app/chrome-like.css">
+	<script src="../assets/app/js/jquery.overlayScrollbars.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<style>
+		::-webkit-scrollbar {
+			display: none;
+		}
+
+		/* fonts and basic setup */
+		* {
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			line-height: 1.5;
+			box-sizing: border-box;
+			color: #44585d;
+		}
+
+		body {
+			background: linear-gradient(45deg, #0ba0f1, #285c82);
+			overflow: hidden;
+		}
+
+		/* custom scrollbar */
+		::-webkit-scrollbar {
+			width: 20px;
+		}
+
+		::-webkit-scrollbar-track {
+			background-color: transparent;
+		}
+
+		::-webkit-scrollbar-thumb {
+			background-color: #d6dee1;
+			border-radius: 20px;
+			border: 6px solid transparent;
+			background-clip: content-box;
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+			background-color: #a8bbbf;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="window-controls" style="margin-left: auto; position: relative;">
+		<div class="button" id="min-button">
+			<img class="icon"
+				srcset="../assets/app/icons/min-w-10.png 1x, ../assets/app/icons/min-w-12.png 1.25x, ../assets/app/icons/min-w-15.png 1.5x, ../assets/app/icons/min-w-15.png 1.75x, ../assets/app/icons/min-w-20.png 2x, ../assets/app/icons/min-w-20.png 2.25x, ../assets/app/icons/min-w-24.png 2.5x, ../assets/app/icons/min-w-30.png 3x, ../assets/app/icons/min-w-30.png 3.5x"
+				draggable="false" />
+		</div>
+		<div class="button" id="max-button">
+			<img class="icon"
+				srcset="../assets/app/icons/max-w-10.png 1x, ../assets/app/icons/max-w-12.png 1.25x, ../assets/app/icons/max-w-15.png 1.5x, ../assets/app/icons/max-w-15.png 1.75x, ../assets/app/icons/max-w-20.png 2x, ../assets/app/icons/max-w-20.png 2.25x, ../assets/app/icons/max-w-24.png 2.5x, ../assets/app/icons/max-w-30.png 3x, ../assets/app/icons/max-w-30.png 3.5x"
+				draggable="false" />
+		</div>
+		<div class="button" id="restore-button">
+			<img class="icon"
+				srcset="../assets/app/icons/restore-w-10.png 1x, ../assets/app/icons/restore-w-12.png 1.25x, ../assets/app/icons/restore-w-15.png 1.5x, ../assets/app/icons/restore-w-15.png 1.75x, ../assets/app/icons/restore-w-20.png 2x, ../assets/app/icons/restore-w-20.png 2.25x, ../assets/app/icons/restore-w-24.png 2.5x, ../assets/app/icons/restore-w-30.png 3x, ../assets/app/icons/restore-w-30.png 3.5x"
+				draggable="false" />
+		</div>
+		<div class="button" id="close-button">
+			<img class="icon"
+				srcset="../assets/app/icons/close-w-10.png 1x, ../assets/app/icons/close-w-12.png 1.25x, ../assets/app/icons/close-w-15.png 1.5x, ../assets/app/icons/close-w-15.png 1.75x, ../assets/app/icons/close-w-20.png 2x, ../assets/app/icons/close-w-20.png 2.25x, ../assets/app/icons/close-w-24.png 2.5x, ../assets/app/icons/close-w-30.png 3x, ../assets/app/icons/close-w-30.png 3.5x"
+				draggable="false" />
+		</div>
+	</div>
+
+
+	<div id="nav-body-views"></div>
+	<script>
+		const { clipboard } = require('electron');
+		const pkg = require('getmac');
+		const enav = new (require('electron-navigation'))({
+
+			newTabCallback: (url, options) => {
+				options.postTabOpenCallback = webview => {
+					webview.setAttribute('plugins', '');
+					electron - navigation
+				}
+				return { options };
+			}
+		});
+
+		let clipboardStr = clipboard.readText();
+		var length = window.process.argv.length;
+		var lastArgument = window.process.argv[length - 1]
+		enav.newTab('http://localhost/dashboard/controller/authenticate?acesskey=' + pkg.default(), { icon: "default" });
+		$(window).on('load', function () {
+			$("body").css("overflow", "hidden");
+		});
+	</script>
+</body>
+
+</html>
