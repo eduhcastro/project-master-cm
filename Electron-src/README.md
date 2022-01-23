@@ -1,3 +1,3 @@
-# Flash-Browser
-Flash Player enabled browser 
-https://github.com/radubirsan/FlashBrowser
+# Electron APP - Dashboard
+
+Template by: FlashBrowser
