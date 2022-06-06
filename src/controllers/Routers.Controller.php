@@ -171,7 +171,7 @@ class RoutersController
 
   private function pathServer()
   {
-    $Request = filter_input(INPUT_SERVER, 'REQUEST_URI');
+    $Request = $_SERVER['REQUEST_URI']; // -> old filter_input(INPUT_SERVER, 'REQUEST_URI');
     $Inite = strpos($Request, '?');
     if ($Inite) :
       $Request = substr($Request, 0, $Inite);
